@@ -5,7 +5,7 @@ import backgroundDummyImg from "../../asset/background.png";
 import { BsCardImage } from "react-icons/bs";
 import { axiosClient } from "../../utils/axiosClient";
 import {useDispatch, useSelector} from 'react-redux';
-import { setLoading } from "../../redux/slices/appConfigSlice";
+
 import { getUserProfile } from "../../redux/slices/postsSlice";
 
 function CreatePost() {
@@ -21,7 +21,7 @@ function CreatePost() {
         fileReader.onload = () => {
             if (fileReader.readyState === fileReader.DONE) {
                 setPostImg(fileReader.result);
-                console.log("img data", fileReader.result);
+                // console.log("img data", fileReader.result);
             }
         };
     };
@@ -32,9 +32,8 @@ function CreatePost() {
                 caption,
                 postImg
             });
-            console.log('post done', result);
             dispatch(getUserProfile({
-                userId: myProfile?._id
+                userId: myProfile?._id,
             }));
         } catch (error) {
             console.log('what is th error', error);

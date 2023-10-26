@@ -28,7 +28,7 @@ function Navbar() {
         <div className="Navbar">
             <div className="container">
                 <h2 className="banner hover-link" onClick={() => navigate("/")}>
-                    Social Media
+                   <span style={{color:"#0ef"}}>Learn</span><span style={{color:"#081b29"}}>ProMedia</span>
                 </h2>
                 <div className="right-side">
                     <div
