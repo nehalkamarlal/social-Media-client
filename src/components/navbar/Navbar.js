@@ -4,7 +4,6 @@ import { useNavigate } from "react-router";
 import Avatar from "../avatar/Avatar";
 import "./Navbar.scss";
 import {useDispatch, useSelector} from 'react-redux';
-import { setLoading } from "../../redux/slices/appConfigSlice";
 import { KEY_ACCESS_TOKEN, removeItem } from "../../utils/localStorageManager";
 import { axiosClient } from "../../utils/axiosClient";
 
@@ -25,10 +24,10 @@ function Navbar() {
     }
 
     return (
-        <div className="Navbar">
+        <div className="Navbar" style={{backgroundColor:"#aaa"}}>
             <div className="container">
                 <h2 className="banner hover-link" onClick={() => navigate("/")}>
-                   <span style={{color:"#0ef"}}>Learn</span><span style={{color:"#081b29"}}>ProMedia</span>
+                   <span style={{color:"#0ef"}}><span className="logo">L</span>earn</span><span style={{color:"#081b29"}}>ProMedia</span>
                 </h2>
                 <div className="right-side">
                     <div

@@ -46,7 +46,7 @@ function Profile() {
                     ))}
                 </div>
                 <div className="right-part">
-                    <div className="profile-card">
+                    <div className="profile-card" style={{backgroundColor:"#aaa"}}>
                         <img
                             className="user-img"
                             src={userProfile?.avatar?.url}

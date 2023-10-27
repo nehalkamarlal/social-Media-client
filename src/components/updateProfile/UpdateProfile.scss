@@ -1,5 +1,6 @@
 .UpdateProfile {
 
+   height: 87vh;
   .container {
       display: flex;
       padding-top: 20px;
@@ -7,7 +8,6 @@
   .left-part {
       flex: 1;
       text-align: center;
-
       .input-user-img {
           display: flex;
           align-items: center;
@@ -38,7 +38,7 @@
       flex: 3;
 
       form {
-          border: 1px solid var(--border-color);
+          border: 1px solid rgb(25, 0, 255);
           padding: 20px;
           border-radius: 4px;
       }

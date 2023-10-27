@@ -40,7 +40,7 @@ function UpdateProfile() {
     }
 
     return (
-        <div className="UpdateProfile">
+        <div className="UpdateProfile" style={{backgroundColor:"#D5DBDB"}}>
             <div className="container">
                 <div className="left-part">
                     <div className="input-user-img">

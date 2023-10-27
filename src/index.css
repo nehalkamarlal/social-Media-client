@@ -39,6 +39,14 @@
   .hover-link {
     cursor: pointer;
   }
+  .logo{
+    font-size: 2rem;
+    font-weight: 800;
+    color:rgba(255, 255, 255, 0.75) ;
+  }
+  .logo:hover{
+    color: rgba(0, 0, 255, 0.578);
+  }
   
   .hover-link:active {
     color: red;

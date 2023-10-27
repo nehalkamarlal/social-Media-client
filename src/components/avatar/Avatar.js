@@ -4,7 +4,7 @@ import "./Avatar.scss";
 
 function Avatar({ src }) {
     return (
-        <div className="Avatar">
+        <div className="Avatar" style={{border:"2px solid #FFC300"}}>
             <img src={src ? src : userImg} alt="user avatar" />
         </div>
     );

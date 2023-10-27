@@ -18,10 +18,10 @@ function Post({ post }) {
     }
 
     return (
-        <div className="Post">
-            <div className="heading" onClick={() => navigate(`/profile/${post.owner._id}`)}>
-                <Avatar src={post.owner?.avatar?.url} />
-                <h4>{post.owner?.name}</h4>
+        <div style={{backgroundColor:"#A2D9CE "}} className="Post">
+            <div style={{backgroundColor:"#F7DC6F"}}  className="heading" onClick={() => navigate(`/profile/${post.owner._id}`)}>
+                <Avatar  src={post.owner?.avatar?.url} />
+                <h4 style={{color:"black"}}>{post.owner?.name}</h4>
             </div>
             <div className="content">
                 <img src={post?.image?.url} alt="" />
